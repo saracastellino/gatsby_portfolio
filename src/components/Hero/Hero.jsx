@@ -26,10 +26,28 @@ const Header = () => {
       <Container>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={500} distance="30px">
           <h1 className="hero-title">
-            {title || 'Hi, my name is'}{' '}
             <span className="text-color-main">{name || 'Your Name'}</span>
+            {title}
             <br />
-            {subtitle || "I'm the Unknown Developer."}
+            <br />
+            {subtitle || (
+              <>
+                <span className="hero-title">Why hire me during Covid-19:</span>
+                <br />
+                <h2>
+                  <br />
+                  <ul>
+                    {/* <b> */}
+                    <li>Trained to work/learn remotely</li>
+                    <li>Situational aware</li>
+                    <li>Coachable</li>
+                    <li>Customer-oriented</li>
+                    <li>Agile enthusiast</li>
+                    {/* </b> */}
+                  </ul>
+                </h2>
+              </>
+            )}
           </h1>
         </Fade>
         <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">

@@ -1,4 +1,5 @@
 import React, { useContext, useState, useEffect } from 'react';
+import { withPrefix } from 'gatsby';
 import Fade from 'react-reveal/Fade';
 import { Container, Row, Col } from 'react-bootstrap';
 import Title from '../Title/Title';
@@ -38,28 +39,50 @@ const About = () => {
             <Fade left={isDesktop} bottom={isMobile} duration={1000} delay={1000} distance="30px">
               <div className="about-wrapper__info">
                 <p className="about-wrapper__info-text">
-                  {paragraphOne ||
-                    'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
+                  {paragraphOne || (
+                    <span>
+                      <b>I love change, innovation and what is different</b>, and I believe
+                      innovation is the solution found collectively through empathy and creativity.
+                    </span>
+                  )}
                 </p>
                 <p className="about-wrapper__info-text">
-                  {paragraphTwo ||
-                    'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi neque, ipsa animi maiores repellendu distinctioaperiam earum dolor voluptatum consequatur blanditiis inventore debitis fuga numquam voluptate architecto itaque molestiae.'}
+                  My previous work experience are in:
+                  {paragraphTwo || (
+                    <span>
+                      <ul>
+                        <b>
+                          <li>education</li>
+                          <li>hospitality</li>
+                          <li>events and communication management</li>
+                          <li>tech startup management</li>
+                          <li>web services for micro-businesses</li>
+                        </b>
+                      </ul>
+                    </span>
+                  )}
                 </p>
                 <p className="about-wrapper__info-text">
-                  {paragraphThree || 'Lorem ipsum dolor sit, amet consectetur adipisicing elit.'}
+                  {paragraphThree || (
+                    <span>
+                      I am trained to manage customers in{' '}
+                      <b>Italian, English, Spanish and French</b> and I deem my main soft skills in
+                      being <b>adaptable, curious and ambitious to excel</b>.
+                    </span>
+                  )}
                 </p>
-                {resume && (
-                  <span className="d-flex mt-3">
-                    <a
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="cta-btn cta-btn--resume"
-                      href={resume}
-                    >
-                      Resume
-                    </a>
-                  </span>
-                )}
+
+                <span className="d-flex mt-3">
+                  <a
+                    href={withPrefix('CV_Sara_Castellino.pdf')}
+                    className="cta-btn cta-btn--resume"
+                    download
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Resume
+                  </a>
+                </span>
               </div>
             </Fade>
           </Col>
