@@ -47,7 +47,7 @@ const About = () => {
                   )}
                 </p>
                 <p className="about-wrapper__info-text">
-                  My previous work experiences are in:
+                  As a career changer, my previous work experiences are in:
                   {paragraphTwo || (
                     <span>
                       <ul>
