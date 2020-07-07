@@ -66,8 +66,8 @@ const About = () => {
                   {paragraphThree || (
                     <span>
                       I am trained to manage customers in{' '}
-                      <b>Italian, English, Spanish and French</b> and I deem my main soft skills in
-                      being <b>adaptable, curious and ambitious to excel</b>.
+                      <b>Italian, English, Spanish and French</b> and I consider that my main soft
+                      skills are being <b>adaptable, curious and ambitious to excel</b>.
                     </span>
                   )}
                 </p>
