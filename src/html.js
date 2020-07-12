@@ -25,11 +25,11 @@ export default function HTML({
         {preBodyComponents}
         <div key="body" id="___gatsby" dangerouslySetInnerHTML={{ __html: body }} />
         {postBodyComponents}
-        <script
+        {/* <script
           data-goatcounter="https://saracastellino.goatcounter.com/count"
           async
           src="//gc.zgo.at/count.js"
-        />
+        /> */}
       </body>
     </html>
   );
