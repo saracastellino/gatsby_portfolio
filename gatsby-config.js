@@ -35,7 +35,7 @@ module.exports = {
       resolve: `gatsby-plugin-goatcounter`,
       options: {
         // REQUIRED! https://[my_code].goatcounter.com
-        code: 'YOUR_GOATCOUNTER_PAGE_CODE',
+        code: 'https://saracastellino.goatcounter.com/count',
 
         // ALL following settings are OPTIONAL
 
