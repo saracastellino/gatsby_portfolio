@@ -41,7 +41,7 @@ const About = () => {
                 <p className="about-wrapper__info-text">
                   {paragraphOne || (
                     <span>
-                      <b>I love change, innovation and what is different</b>, and I believe
+                      <b>I like change, innovation and what is different</b>, and I believe
                       innovation is the solution found collectively through empathy and creativity.
                     </span>
                   )}
