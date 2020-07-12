@@ -50,7 +50,7 @@ export const projectsData = [
   {
     id: nanoid(),
     img: 'Happy_icon.png',
-    title: 'Happy | Responsive Mood Tracker. Built using JavaScript, Java, React, Spring, H2',
+    title: 'Happy | Responsive Mood Tracker. Built using JavaScript, Java, React, Spring, H2.',
     info:
       'Group project (5 days). Responsive mobile app allowing the user to track their mood over time. The app is inspired by the difficulties many people are experiencing during lockdown. Technologies used: JavaScript, Java, React, Spring, H2, HTML, CSS, NPM, Recharts, external APIs.',
     info2: '',
