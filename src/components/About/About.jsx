@@ -74,7 +74,7 @@ const About = () => {
 
                 <span className="d-flex mt-3">
                   <a
-                    href={withPrefix('CV_Sara_Castellino.pdf')}
+                    href={withPrefix('CV__Sara_Castellino.pdf')}
                     className="cta-btn cta-btn--resume"
                     download
                     target="_blank"
